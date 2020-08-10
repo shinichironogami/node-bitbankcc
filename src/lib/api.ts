@@ -67,7 +67,7 @@ export class Api {
         }
         return res.data;
       } else {
-        throw new Error(res.data.data.code);
+        throw new Error(res.data);
       }
     });
   }
